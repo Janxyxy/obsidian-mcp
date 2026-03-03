@@ -1,0 +1,13 @@
+{
+  "name": "obsidian-void-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Megatron's Obsidian Void vault",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
