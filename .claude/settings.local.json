@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__obsidian-void-mcp__read_note",
+      "mcp__obsidian-void-mcp__search_notes",
+      "mcp__obsidian-void-mcp__list_vault",
+      "mcp__obsidian-void-mcp__edit_note",
+      "Bash(node C:/Users/Megatron/obsidian-mcp/fix_dates.cjs)"
+    ]
+  }
+}
