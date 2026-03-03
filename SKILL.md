@@ -1,11 +1,34 @@
 ---
 name: obsidian-void
-description: Use this skill whenever the user wants to interact with their Obsidian vault called Void. Triggers include: reading notes, searching the vault, creating or editing notes, listing vault structure, writing daily notes, logging what the user did today, summarizing session actions, or any mention of Obsidian, vault, poznamky, denik, denni poznamka, Void vault. Also trigger when finishing a task session and the user wants to log progress. Proactively offer to log to daily note when actions were taken during a session.
+description: "Use this skill whenever the user wants to interact with their Obsidian vault called Void. Triggers include: reading notes, searching the vault, creating or editing notes, listing vault structure, writing daily notes, logging what the user did today, summarizing session actions, or any mention of Obsidian, vault, poznamky, denik, denni poznamka, Void vault. Also trigger when finishing a task session and the user wants to log progress. Proactively offer to log to daily note when actions were taken during a session."
 ---
 
 # Obsidian Void Skill
 
 Claude's guide for working with Megatron's Obsidian vault via the obsidian-void-mcp MCP server.
+
+## Installation
+
+### 1. Add MCP server to Claude Desktop
+
+Edit `%APPDATA%\Claude\claude_desktop_config.json` and add:
+
+```json
+{
+  "mcpServers": {
+    "obsidian-void": {
+      "command": "node",
+      "args": ["C:\\Users\\Megatron\\obsidian-mcp\\server.js"]
+    }
+  }
+}
+```
+
+Then fully restart Claude Desktop. Status: ✅ configured.
+
+### 2. Add skill to Claude Code
+
+Place this `SKILL.md` inside your project or in `~/.claude/skills/obsidian-void.md` so Claude Code can invoke it as a skill.
 
 ## Vault Info
 
